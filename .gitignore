@@ -1,0 +1,23 @@
+# Hiver RAG System
+
+node_modules/
+.vercel/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+.env.local
+.venv
+venv/
+ENV/
+.DS_Store
+.idea/
+.vscode/
+*.log

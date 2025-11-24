@@ -1,0 +1,11 @@
+{
+    "title": "How to Configure Automations in Hiver",
+    "category": "Automations",
+    "tags": [
+        "automations",
+        "workflows",
+        "setup",
+        "configuration"
+    ],
+    "content": "Automations in Hiver help you streamline repetitive tasks and ensure consistent workflows. Here's how to configure them:\n\n1. Navigate to Settings: Click on the gear icon in the top right corner and select 'Automations' from the menu.\n\n2. Create a New Automation: Click the 'Create Automation' button. You'll see options for different trigger types:\n   - Email received\n   - Email assigned\n   - Status changed\n   - Tag added/removed\n\n3. Set Trigger Conditions: Choose when the automation should run. For example, 'When an email is received from a specific domain' or 'When a tag is added'.\n\n4. Define Actions: Select what should happen when the trigger conditions are met:\n   - Auto-assign to a team member\n   - Add tags automatically\n   - Send auto-replies\n   - Change email status\n   - Add notes\n\n5. Add Filters (Optional): Narrow down when the automation runs using filters like:\n   - Sender email address\n   - Subject contains specific keywords\n   - Email body contains certain text\n   - Time of day\n\n6. Test Your Automation: Before activating, use the 'Test' feature to ensure it works as expected.\n\n7. Activate: Toggle the automation to 'Active' status.\n\nBest Practices:\n- Start with simple automations and gradually add complexity\n- Use clear naming conventions for easy management\n- Regularly review and update automations\n- Avoid creating conflicting automations\n- Monitor automation logs to track performance\n\nCommon Use Cases:\n- Auto-assign emails from VIP customers to senior support agents\n- Automatically tag emails based on keywords in the subject\n- Send acknowledgment emails for specific inquiry types\n- Escalate unresponded emails after a certain time period"
+}

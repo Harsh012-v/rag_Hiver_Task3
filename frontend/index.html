@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiver Copilot - Knowledge Base RAG</title>
+    <meta name="description" content="Intelligent knowledge base search powered by RAG (Retrieval-Augmented Generation)">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="32" height="32" rx="8" fill="url(#gradient)"/>
+                    <path d="M16 8L22 12V20L16 24L10 20V12L16 8Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="gradient" x1="0" y1="0" x2="32" y2="32">
+                            <stop offset="0%" stop-color="#667eea"/>
+                            <stop offset="100%" stop-color="#764ba2"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <h1>Hiver Copilot</h1>
+            </div>
+            <div class="subtitle">Powered by RAG Technology</div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Search Section -->
+            <section class="search-section">
+                <div class="search-container">
+                    <h2>Ask me anything about Hiver</h2>
+                    <p class="search-description">Get instant answers from our knowledge base using AI-powered semantic search</p>
+                    
+                    <div class="search-box">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <input 
+                            type="text" 
+                            id="queryInput" 
+                            placeholder="e.g., How do I configure automations in Hiver?"
+                            autocomplete="off"
+                        />
+                        <button id="searchBtn" class="search-btn">
+                            <span class="btn-text">Search</span>
+                            <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Quick Queries -->
+                    <div class="quick-queries">
+                        <span class="quick-label">Try these:</span>
+                        <button class="quick-query-btn" data-query="How do I configure automations in Hiver?">
+                            Configure automations
+                        </button>
+                        <button class="quick-query-btn" data-query="Why is CSAT not appearing?">
+                            CSAT troubleshooting
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Loading State -->
+            <div id="loadingState" class="loading-state hidden">
+                <div class="loading-spinner"></div>
+                <p>Searching knowledge base...</p>
+            </div>
+
+            <!-- Error State -->
+            <div id="errorState" class="error-state hidden">
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                    <circle cx="24" cy="24" r="20" stroke="#ef4444" stroke-width="2"/>
+                    <path d="M24 16v12M24 32v.5" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <h3>Something went wrong</h3>
+                <p id="errorMessage">Please try again or contact support if the issue persists.</p>
+            </div>
+
+            <!-- Results Section -->
+            <section id="resultsSection" class="results-section hidden">
+                <!-- Confidence Score -->
+                <div class="confidence-card">
+                    <div class="confidence-header">
+                        <h3>Confidence Score</h3>
+                        <div class="confidence-value" id="confidenceValue">0%</div>
+                    </div>
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" id="confidenceFill"></div>
+                    </div>
+                    <p class="confidence-description" id="confidenceDescription">
+                        This score indicates how relevant the retrieved information is to your query.
+                    </p>
+                </div>
+
+                <!-- Generated Answer -->
+                <div class="answer-card">
+                    <div class="card-header">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3>AI-Generated Answer</h3>
+                    </div>
+                    <div class="answer-content" id="answerContent">
+                        <!-- Answer will be inserted here -->
+                    </div>
+                </div>
+
+                <!-- Retrieved Articles -->
+                <div class="articles-section">
+                    <div class="section-header">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3>Retrieved Knowledge Base Articles</h3>
+                        <span class="article-count" id="articleCount">0 articles</span>
+                    </div>
+                    <div class="articles-grid" id="articlesGrid">
+                        <!-- Articles will be inserted here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built with ❤️ using FastAPI, Sentence Transformers, FAISS, and OpenAI</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+    "title": "Analytics and Reporting in Hiver",
+    "category": "Analytics",
+    "tags": [
+        "analytics",
+        "reports",
+        "metrics",
+        "performance"
+    ],
+    "content": "Hiver's analytics help you track team performance and identify improvement opportunities.\n\nAccessing Analytics:\n1. Click 'Analytics' in the left sidebar\n2. Select date range for your report\n3. Choose specific shared mailboxes to analyze\n4. Filter by team members, tags, or other criteria\n\nKey Metrics:\n\n1. Response Time Metrics:\n   - First Response Time: Time to first reply\n   - Average Response Time: Mean time for all responses\n   - Resolution Time: Time to close conversations\n\n2. Volume Metrics:\n   - Total emails received\n   - Emails closed\n   - Emails pending\n   - New vs. returning conversations\n\n3. Team Performance:\n   - Emails handled per team member\n   - Individual response times\n   - Workload distribution\n   - CSAT scores by agent\n\n4. CSAT Metrics:\n   - Overall satisfaction score\n   - Response rate\n   - Trend over time\n   - Scores by category or tag\n\nReport Types:\n\n1. Overview Dashboard:\n   - High-level summary of all metrics\n   - Trend charts and comparisons\n   - Quick insights at a glance\n\n2. Detailed Reports:\n   - Email-level data\n   - Exportable to CSV\n   - Custom date ranges\n   - Filterable by multiple dimensions\n\n3. Scheduled Reports:\n   - Automated email delivery\n   - Daily, weekly, or monthly\n   - Customizable recipients\n   - PDF or CSV format\n\nUsing Analytics Effectively:\n- Set baseline metrics for your team\n- Track trends over time, not just snapshots\n- Compare performance across team members\n- Identify peak hours and adjust staffing\n- Use CSAT feedback to improve processes\n- Export data for deeper analysis\n\nCommon Analysis Scenarios:\n- Identifying bottlenecks in response workflow\n- Evaluating automation effectiveness\n- Determining optimal team size\n- Tracking improvement after training\n- Justifying resource allocation\n\nTips:\n- Review analytics weekly with your team\n- Set realistic, data-driven goals\n- Celebrate improvements and wins\n- Use insights to refine automations\n- Don't obsess over metrics—balance with quality"
+}

@@ -1,0 +1,11 @@
+{
+    "title": "Collision Detection and Alerts",
+    "category": "Collaboration",
+    "tags": [
+        "collision detection",
+        "collaboration",
+        "alerts",
+        "conflicts"
+    ],
+    "content": "Collision detection prevents team members from working on the same email simultaneously, avoiding duplicate or conflicting responses.\n\nHow It Works:\n\n1. Real-Time Awareness:\n   - When someone opens an email, others see a notification\n   - Shows who is currently viewing or composing\n   - Updates in real-time as people join or leave\n\n2. Visual Indicators:\n   - Avatar/profile picture appears on the email\n   - Banner notification at the top of the email\n   - Color-coded alerts for different team members\n\n3. Conflict Prevention:\n   - Warning before sending if someone else is composing\n   - Option to coordinate before both send\n   - Draft visibility to avoid duplicate work\n\nCollision Scenarios:\n\n1. Viewing Collision:\n   - Multiple people reading the same email\n   - Low risk—just awareness\n   - No action required\n\n2. Composing Collision:\n   - Two people drafting responses simultaneously\n   - High risk of duplicate responses\n   - System alerts both parties\n\n3. Assignment Collision:\n   - Email reassigned while someone is working on it\n   - Notification sent to both old and new assignee\n   - Prevents lost work\n\nBest Practices:\n\n1. Communication:\n   - Use internal notes to coordinate\n   - @mention colleagues if you need their input\n   - Check collision alerts before composing\n\n2. Workflow:\n   - Assign emails before working on them\n   - Use status updates to show progress\n   - Close emails promptly when resolved\n\n3. Team Protocols:\n   - Establish rules for handling collisions\n   - Define who takes priority in conflicts\n   - Use tags to indicate work-in-progress\n\nConfiguration:\n- Collision detection is enabled by default\n- Admins can adjust sensitivity in Settings\n- Notification preferences customizable per user\n\nTroubleshooting:\n- Alerts not appearing: Check browser permissions\n- Delayed notifications: Refresh browser\n- False positives: May occur with slow connections\n\nAdvanced Features:\n- Draft sharing for collaborative responses\n- Collision history and logs\n- Integration with assignment workflows"
+}

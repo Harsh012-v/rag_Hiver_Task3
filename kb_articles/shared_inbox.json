@@ -1,0 +1,10 @@
+{
+    "title": "Managing Shared Inboxes in Hiver",
+    "category": "Shared Inbox",
+    "tags": [
+        "shared inbox",
+        "collaboration",
+        "team management"
+    ],
+    "content": "Shared inboxes are the foundation of team collaboration in Hiver. Here's how to manage them effectively:\n\nSetting Up a Shared Inbox:\n1. Go to Settings > Shared Mailboxes\n2. Click 'Add Shared Mailbox'\n3. Enter the email address (e.g., support@company.com)\n4. Grant Gmail access permissions\n5. Configure mailbox settings\n\nKey Features:\n\n1. Email Assignment:\n   - Assign emails to specific team members\n   - See who's working on what at a glance\n   - Prevent duplicate responses\n\n2. Email Status:\n   - Open: New, unassigned emails\n   - Pending: Awaiting response or action\n   - Closed: Resolved conversations\n   - Custom statuses available on higher plans\n\n3. Collaboration:\n   - Add internal notes (invisible to customers)\n   - @mention team members for input\n   - Share drafts for review before sending\n\n4. Organization:\n   - Use tags to categorize emails\n   - Create custom views and filters\n   - Set up folders for different workflows\n\n5. Team Management:\n   - Add or remove team members\n   - Set permissions (Admin, Member, Light user)\n   - Configure notification preferences\n\nBest Practices:\n- Establish clear assignment protocols\n- Use tags consistently across the team\n- Regularly close resolved conversations\n- Set up automations for common scenarios\n- Review analytics to identify bottlenecks\n\nCommon Issues:\n- Emails not syncing: Check Gmail permissions\n- Missing emails: Verify filters and archive settings\n- Duplicate notifications: Adjust notification settings per user"
+}

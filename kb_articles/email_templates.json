@@ -1,0 +1,11 @@
+{
+    "title": "Using Email Templates in Hiver",
+    "category": "Productivity",
+    "tags": [
+        "templates",
+        "email",
+        "productivity",
+        "responses"
+    ],
+    "content": "Email templates help you respond faster and maintain consistency. Here's your complete guide:\n\nCreating Templates:\n1. Click the template icon in the email compose window\n2. Select 'Create New Template'\n3. Name your template descriptively\n4. Write your template content\n5. Use placeholders for personalization:\n   - {{customer_name}}\n   - {{agent_name}}\n   - {{company_name}}\n   - {{ticket_id}}\n\nTypes of Templates:\n\n1. Personal Templates:\n   - Visible only to you\n   - Quick responses for your common scenarios\n   - Easily customizable\n\n2. Shared Templates:\n   - Available to entire team\n   - Ensures consistent messaging\n   - Requires admin permission to create\n\nUsing Templates:\n1. Start composing an email\n2. Click the template icon or type '//' to search\n3. Select your template\n4. Customize as needed\n5. Send\n\nTemplate Best Practices:\n- Keep templates concise and clear\n- Use friendly, professional tone\n- Include all necessary information\n- Leave room for personalization\n- Review and update regularly\n\nAdvanced Features:\n- Template categories for organization\n- Keyboard shortcuts for quick access\n- Template analytics to track usage\n- Version control for shared templates\n\nCommon Template Use Cases:\n- Welcome messages for new customers\n- Order confirmation responses\n- Troubleshooting steps for common issues\n- Follow-up messages\n- Closing/resolution confirmations\n- Out-of-office or delay notifications\n\nTips:\n- Create templates for 80% of your responses\n- Always personalize before sending\n- Use clear template names for easy searching\n- Archive outdated templates instead of deleting"
+}
